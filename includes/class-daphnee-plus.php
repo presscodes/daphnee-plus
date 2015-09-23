@@ -10,4 +10,12 @@ class Daphnee_Plus {
 
     // TODO: Add option to change the footer text (copyright)
 
+    public function __construct() {
+        add_filter( 'daphnee/template/footer', array( $this, 'override_footer_partial' ) );
+    }
+
+    public function override_footer_partial() {
+        return DAPHNEE_PLUS_PATH . 'templates/partials/footer.php';
+    }
+
 }

@@ -9,4 +9,12 @@
  * Text Domain:   daphnee-plus
  */
 
-require plugin_dir_path( __FILE__ ) . 'includes/class-daphnee-plus.php';
+if ( ! defined( 'DAPHNEE_PLUS_PATH' ) ) {
+    define( 'DAPHNEE_PLUS_PATH', plugin_dir_path( __FILE__ ) );
+}
+
+if ( ! class_exists( 'Daphnee_Plus' ) ) {
+    require DAPHNEE_PLUS_PATH . 'includes/class-daphnee-plus.php';
+}
+
+$daphnee_plus = new Daphnee_Plus();
