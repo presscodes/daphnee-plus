@@ -13,8 +13,24 @@ if ( ! defined( 'DAPHNEE_PLUS_PATH' ) ) {
     define( 'DAPHNEE_PLUS_PATH', plugin_dir_path( __FILE__ ) );
 }
 
-if ( ! class_exists( 'Daphnee_Plus' ) ) {
-    require DAPHNEE_PLUS_PATH . 'includes/class-daphnee-plus.php';
-}
+function daphnee_plus_init() {
+    /**
+     * Add the main plugin class
+     */
+    if ( ! class_exists( 'Daphnee_Plus' ) ) {
+        require DAPHNEE_PLUS_PATH . 'includes/class-daphnee-plus.php';
+    }
+    /**
+     * Add the helper class.
+     */
+    if ( ! class_exists( 'Daphnee_Plus_Helper' ) ) {
+        require DAPHNEE_PLUS_PATH . 'includes/class-daphnee-plus-helper.php';
+    }
+    /**
+     * Add customizer mods
+     */
+    require DAPHNEE_PLUS_PATH . 'includes/customizer.php';
 
-$daphnee_plus = new Daphnee_Plus();
+    $daphnee_plus = new Daphnee_Plus();
+}
+add_action( 'after_setup_theme', 'daphnee_plus_init' );
