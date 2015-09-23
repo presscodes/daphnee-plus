@@ -49,7 +49,7 @@ if ( class_exists( 'Kirki' ) ) {
         'default'   => array(
             'font-family' => 'Roboto',
             'font-weight' => '700',
-            'font-size'   => '2em',
+            'font-size'   => '1.5em',
         ),
         'choices'   => array(
             'font-family' => true,
@@ -72,7 +72,7 @@ if ( class_exists( 'Kirki' ) ) {
         'default'   => array(
             'font-family' => 'Roboto',
             'font-weight' => '700',
-            'font-size'   => '2em',
+            'font-size'   => '1.17em',
         ),
         'choices'   => array(
             'font-family' => true,
@@ -95,7 +95,7 @@ if ( class_exists( 'Kirki' ) ) {
         'default'   => array(
             'font-family' => 'Roboto',
             'font-weight' => '700',
-            'font-size'   => '2em',
+            'font-size'   => '1em',
         ),
         'choices'   => array(
             'font-family' => true,
@@ -118,7 +118,7 @@ if ( class_exists( 'Kirki' ) ) {
         'default'   => array(
             'font-family' => 'Roboto',
             'font-weight' => '700',
-            'font-size'   => '2em',
+            'font-size'   => '0.9em',
         ),
         'choices'   => array(
             'font-family' => true,
@@ -141,7 +141,7 @@ if ( class_exists( 'Kirki' ) ) {
         'default'   => array(
             'font-family' => 'Roboto',
             'font-weight' => '700',
-            'font-size'   => '2em',
+            'font-size'   => '0.85em',
         ),
         'choices'   => array(
             'font-family' => true,
