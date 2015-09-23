@@ -8,3 +8,5 @@
  * Version:       0.1
  * Text Domain:   daphnee-plus
  */
+
+require plugin_dir_path( __FILE__ ) . 'includes/class-daphnee-plus.php';
