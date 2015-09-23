@@ -7,7 +7,7 @@ if ( class_exists( 'Kirki' ) ) {
         'settings'  => 'footer_copyright_text',
         'label'     => __( 'Footer Copyright Text', 'daphnee-plus' ),
         'section'   => 'footer',
-        'default'   => sprintf( esc_html__( 'Theme: %1$s by %2$s.', 'daphnee' ), 'daphnee', '<a href="https://press.codes" rel="designer">PressCodes Team</a>' ),
+        'default'   => Daphnee_Plus_Helper::default_copyright_text(),
         'priority'  => 30,
         'transport' => 'postMessage',
         'js_vars'   => array(
@@ -16,5 +16,143 @@ if ( class_exists( 'Kirki' ) ) {
                 'function' => 'html',
             ),
         )
+    ) );
+
+    Kirki::add_field( 'daphnee', array(
+        'type'      => 'typography',
+        'settings'  => 'h1',
+        'label'     => __( 'H1 Typography Settings', 'daphnee-plus' ),
+        'section'   => 'typography_headers',
+        'default'   => array(
+            'font-family' => 'Roboto',
+            'font-weight' => '700',
+            'font-size'   => '2em',
+        ),
+        'choices'   => array(
+            'font-family' => true,
+            'font-weight' => true,
+            'font-size'   => true,
+        ),
+        'priority'  => 30,
+        'output'    => array(
+            array(
+                'element' => 'h1',
+            ),
+        ),
+    ) );
+
+    Kirki::add_field( 'daphnee', array(
+        'type'      => 'typography',
+        'settings'  => 'h2',
+        'label'     => __( 'H2 Typography Settings', 'daphnee-plus' ),
+        'section'   => 'typography_headers',
+        'default'   => array(
+            'font-family' => 'Roboto',
+            'font-weight' => '700',
+            'font-size'   => '2em',
+        ),
+        'choices'   => array(
+            'font-family' => true,
+            'font-weight' => true,
+            'font-size'   => true,
+        ),
+        'priority'  => 30,
+        'output'    => array(
+            array(
+                'element' => 'h2',
+            ),
+        ),
+    ) );
+
+    Kirki::add_field( 'daphnee', array(
+        'type'      => 'typography',
+        'settings'  => 'h3',
+        'label'     => __( 'H3 Typography Settings', 'daphnee-plus' ),
+        'section'   => 'typography_headers',
+        'default'   => array(
+            'font-family' => 'Roboto',
+            'font-weight' => '700',
+            'font-size'   => '2em',
+        ),
+        'choices'   => array(
+            'font-family' => true,
+            'font-weight' => true,
+            'font-size'   => true,
+        ),
+        'priority'  => 30,
+        'output'    => array(
+            array(
+                'element' => 'h3',
+            ),
+        ),
+    ) );
+
+    Kirki::add_field( 'daphnee', array(
+        'type'      => 'typography',
+        'settings'  => 'h4',
+        'label'     => __( 'H4 Typography Settings', 'daphnee-plus' ),
+        'section'   => 'typography_headers',
+        'default'   => array(
+            'font-family' => 'Roboto',
+            'font-weight' => '700',
+            'font-size'   => '2em',
+        ),
+        'choices'   => array(
+            'font-family' => true,
+            'font-weight' => true,
+            'font-size'   => true,
+        ),
+        'priority'  => 30,
+        'output'    => array(
+            array(
+                'element' => 'h4',
+            ),
+        ),
+    ) );
+
+    Kirki::add_field( 'daphnee', array(
+        'type'      => 'typography',
+        'settings'  => 'h5',
+        'label'     => __( 'H5 Typography Settings', 'daphnee-plus' ),
+        'section'   => 'typography_headers',
+        'default'   => array(
+            'font-family' => 'Roboto',
+            'font-weight' => '700',
+            'font-size'   => '2em',
+        ),
+        'choices'   => array(
+            'font-family' => true,
+            'font-weight' => true,
+            'font-size'   => true,
+        ),
+        'priority'  => 30,
+        'output'    => array(
+            array(
+                'element' => 'h5',
+            ),
+        ),
+    ) );
+
+    Kirki::add_field( 'daphnee', array(
+        'type'      => 'typography',
+        'settings'  => 'h6',
+        'label'     => __( 'H6 Typography Settings', 'daphnee-plus' ),
+        'section'   => 'typography_headers',
+        'default'   => array(
+            'font-family' => 'Roboto',
+            'font-weight' => '700',
+            'font-size'   => '2em',
+        ),
+        'choices'   => array(
+            'font-family' => true,
+            'font-weight' => true,
+            'font-size'   => true,
+        ),
+        'priority'  => 30,
+        'output'    => array(
+            array(
+                'element' => 'h6',
+            ),
+        ),
     ) );
 }
